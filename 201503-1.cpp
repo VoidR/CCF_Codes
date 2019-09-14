@@ -17,8 +17,8 @@ int main()
 	{
 		for(int j=0;j<m;j++)
 		{
-			cin>>mat[j][i];
-			if(i==n-1)	cout<<endl;
+			cout<<mat[j][n-i-1];
+			if(j==m-1)	cout<<endl;
 			else cout<<" ";
 		}
 	}
