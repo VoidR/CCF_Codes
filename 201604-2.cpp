@@ -13,6 +13,8 @@ int main()
 			scanf("%c",&mat[i][j]);
 			getchar();
 		}
+	for(int j=1;j<=10;j++)
+			mat[16][j]='1';
 	for(int i=1;i<=4;i++)
 		for(int j=1;j<=4;j++)
 		{
@@ -23,7 +25,7 @@ int main()
 	cin>>s;
 	s--;//align
 	int flag=1;
-	for(int i=1;i<=15&&flag;i++)
+	for(int i=1;i<=16&&flag;i++)
 	{
 		for(int j=1;j<=last&&flag;j++)
 		{
@@ -43,17 +45,6 @@ int main()
 				for(int k=1;k<=4;k++)
 				{
 					mat[i+j-1+4-last][s+k]+=t[j][k]-'0';
-				}
-			}
-			break;
-		}
-		else if(i==15-last+1)
-		{
-			for(int j=1;j<=last;j++)
-			{
-				for(int k=1;k<=4;k++)
-				{
-					mat[i+j-1][s+k]+=t[j][k]-'0';
 				}
 			}
 			break;
